@@ -1,0 +1,7 @@
+{
+  "name": "nidoo-app-html",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
