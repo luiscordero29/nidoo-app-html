@@ -1,6 +1,3 @@
-
-
-
 <ion-header>
   <!--Encabezado-->
   <p text-right class="p-1">
@@ -10,18 +7,18 @@
 
   <ion-navbar color="purple">
     <!--Logo-->
-    <img src="/assets/imgs/logo-nidoo.svg" class="logo">
+    <img src="/assets/imgs/logo-nidoo.svg" class="logo1">
 
     <!--Menu-->
     <button color="light" ion-button float-right clear>
-      <ion-icon name="menu"></ion-icon>
+      <ion-icon name="menu" style="font-size: 25px"></ion-icon>
     </button>
 
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <div text-center>
+<ion-content>
+  <div text-center padding>
     <!--select-->
     <ion-list>
       <ion-item>
@@ -37,67 +34,47 @@
         </ion-select>
       </ion-item>
     </ion-list>
-<!--botones de busqueda-->
+    <!--botones de busqueda-->
     <button ion-button color="purple">Buscar cerca de mi ubicación</button>
     <button ion-button color="purple" class="boton" outline>Busqueda por dirección</button>
   </div>
- 
 
+  <div class="bar bar-footer bar-balanced">
+    <ion-toolbar color="purple" text-center>
+      <!--logo-->
+      <img src="/assets/imgs/logo-nidoo.svg" class="logo2" padding>
 
+      <!--botones-->
+      <button ion-button color="light" clear class="botones">Home</button>
+      <button ion-button color="light" clear class="botones">Busca tu parqueadero</button>
+      <button ion-button color="light" clear class="botones">Ofrece un parqueadero</button>
+      <button ion-button color="light" clear class="botones">Blog</button>
+      <button ion-button color="light" clear class="botones">Club Nidoo</button>
+      <button ion-button color="light" clear class="botones">Mi cuanta</button>
+      <button ion-button color="light" clear class="botones">Recupera tu clave</button>
+      <button ion-button color="light" clear class="botones">Sobre Nidoo</button>
+      <button ion-button color="light" clear class="botones">Preguntas frecuentes</button>
+      <button ion-button color="light" clear class="botones">Sobre tarifas</button>
+      <button ion-button color="light" clear class="botones">Terminos y Condiciones</button>
+      <button ion-button color="light" clear class="botones">Avisos de privacidad</button>
+      <button ion-button color="light" clear class="botones">SIC</button>
 
-
-  <div>
-<!--boton de mas-->
-    <ion-fab left bottom>
-      <button ion-fab mini color="purple">
-        <ion-icon name="more"></ion-icon>
-      </button>
-      <ion-fab-list side="top">
-        <div text-left>
-          <button ion-button color="light" small class="textcolor">Home</button>
-          <button ion-button color="light" small class="textcolor">Busca tu parqueadero</button>
-          <button ion-button color="light" small class="textcolor">Ofrece un parqueadero</button>
-          <button ion-button color="light" small class="textcolor">Blog</button>
-          <button ion-button color="light" small class="textcolor">Club Nidoo</button>
-          <button ion-button color="light" small class="textcolor">Mi cuanta</button>
-          <button ion-button color="light" small class="textcolor">Recupera tu clave</button>
-          <button ion-button color="light" small class="textcolor">Sobre Nidoo</button>
-          <button ion-button color="light" small class="textcolor">Preguntas frecuentes</button>
-          <button ion-button color="light" small class="textcolor">Sobre tarifas</button>
-          <button ion-button color="light" small class="textcolor">Terminos y Condiciones</button>
-          <button ion-button color="light" small class="textcolor">Avisos de privacidad</button>
-          <button ion-button color="light" small class="textcolor">SIC</button>
-        </div>
-      </ion-fab-list>
-    </ion-fab>
-<!--boton de contacto-->
-    <ion-fab center bottom>
-      <button ion-fab mini color="purple">
-        <ion-icon name="contacts"></ion-icon>
-      </button>
-    </ion-fab>
-<!--boton de redes-->
-    <ion-fab right bottom>
-      <button ion-fab mini color="purple">
-        <ion-icon name="add"></ion-icon>
-      </button>
-      <ion-fab-list side="top">
-        <button ion-fab>
-          <ion-icon name="logo-facebook" color="orange"></ion-icon>
+      <!--seccion de botones-->
+      <ion-segment>
+        <button color="light" ion-button clear>
+          <ion-icon name="logo-facebook"></ion-icon>
         </button>
-        <button ion-fab>
-          <ion-icon name="logo-twitter" color="orange"></ion-icon>
+        <button color="light" ion-button clear>
+          <ion-icon name="logo-twitter"></ion-icon>
         </button>
-        <button ion-fab>
-          <ion-icon name="logo-instagram" color="orange"></ion-icon>
+        <button color="light" ion-button clear>
+          <ion-icon name="logo-instagram"></ion-icon>
         </button>
-      </ion-fab-list>
-    </ion-fab>
+      </ion-segment>
 
+      <!--boton contacto-->
+      <button ion-button color="orange">Contáctanos</button>
+
+      <h6 class="footer">Copyright NIDOO © 2018. Todos los derechos reservados</h6>
+    </ion-toolbar>
   </div>
-</ion-content>
-<ion-footer>
-  <ion-toolbar color="purple">
-    <h6 class="footer">Copyright NIDOO © 2018. Todos los derechos reservados</h6>
-  </ion-toolbar>
-</ion-footer>
