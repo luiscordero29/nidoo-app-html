@@ -22,7 +22,7 @@
     <!--select-->
     <ion-list>
       <ion-item>
-        <ion-label>Sector :</ion-label>
+        <ion-label class="text-drak">Sector :</ion-label>
         <ion-select [(ngModel)]="gaming">
           <ion-option value="nes">Toda la ciudad</ion-option>
           <ion-option value="n64">Centro internacional</ion-option>
@@ -36,45 +36,91 @@
     </ion-list>
     <!--botones de busqueda-->
     <button ion-button color="purple">Buscar cerca de mi ubicación</button>
-    <button ion-button color="purple" class="boton" outline>Busqueda por dirección</button>
+    <button ion-button color="purple" class="boton" outline (click)="busquedirec()">Búsqueda por dirección</button>
   </div>
 
-  <ion-card>
-      <ion-row no-padding>
+
+  <div class="scroll">
+    <div class="col">
+      <ion-card>
+        <ion-row no-padding>
           <ion-col>
-              <ion-card-header>
-                  Carro o Camioneta
-                  <p class="p-1">Cl. 65 # 10</p>
-                </ion-card-header>
+            <ion-card-header class="text-drak" style="font-size: 13px">
+              Carro o Camioneta
+              <p style="font-size: 13px">Cl. 65 # 10</p>
+            </ion-card-header>
           </ion-col>
-          <ion-col text-right padding>
-            <p style="color:#EE843E; margin-top: 10px" >
-              $225.000
-            </p>
+
+          <ion-col text-right>
+            <ion-card-header style="color:#f60; font-size: 13px">
+              <strong>$225.000</strong>
+              <p class="star">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </p>
+            </ion-card-header>
           </ion-col>
+
+          <ion-col padding-left>
+            <ion-segment class="text-drak">
+              <ion-icon name="car" style="font-size: 40px"></ion-icon>
+              <ion-icon name="videocam" style="font-size: 40px; margin-left:8px"></ion-icon>
+              <ion-badge class="text-drak no-color" style="font-size: 20px; ">+3</ion-badge>
+              <ion-icon name="walk" style="font-size: 30px;margin-left:90px"></ion-icon>
+              <ion-item ion-item style="font-size: 13px"> 12 min</ion-item>
+            </ion-segment>
+          </ion-col>
+
         </ion-row>
-      <div >
-          <ion-row>
-              <ion-col padding-left>
-                 <ion-icon  name="car" style="font-size: 50px"></ion-icon>
-                <ion-icon  name="videocam" style="font-size: 50px; margin-left:10px"></ion-icon>
-               </ion-col>
-               <ion-col col-6 text-right padding-top>
-                  <ion-icon  name="star-outline" style="font-size: 25px"></ion-icon>
-                  <ion-icon  name="star-outline" style="font-size: 25px"></ion-icon>
-                  <ion-icon  name="star-outline" style="font-size: 25px"></ion-icon>
-                  <ion-icon  name="star-outline" style="font-size: 25px"></ion-icon>
-                  <ion-icon  name="star-outline" style="font-size: 25px"></ion-icon>
-               </ion-col>
-            </ion-row>
-        
-        
-      </div>  
-    </ion-card>
+      </ion-card>
+    </div>
 
+    <div class="col">
+        <ion-card>
+          <ion-row no-padding>
+            <ion-col>
+              <ion-card-header class="text-drak" style="font-size: 13px">
+                Carro o Camioneta
+                <p style="font-size: 13px">Cl. 65 # 10</p>
+              </ion-card-header>
+            </ion-col>
+  
+            <ion-col text-right>
+              <ion-card-header style="color:#f60; font-size: 13px">
+                <strong>$225.000</strong>
+                <p class="star">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </p>
+              </ion-card-header>
+            </ion-col>
+  
+            <ion-col padding-left>
+              <ion-segment class="text-drak">
+                <ion-icon name="car" style="font-size: 40px"></ion-icon>
+                <ion-icon name="videocam" style="font-size: 40px; margin-left:8px"></ion-icon>
+                <ion-badge class="text-drak no-color" style="font-size: 20px; ">+3</ion-badge>
+                <ion-icon name="walk" style="font-size: 30px;margin-left:90px"></ion-icon>
+                <ion-item ion-item style="font-size: 13px"> 12 min</ion-item>
+              </ion-segment>
+            </ion-col>
+  
+          </ion-row>
+        </ion-card>
+      </div>
+  </div>
 
+  <ion-fab right bottom>
+      <button ion-fab color="orange" class="conver"><ion-icon name="text"></ion-icon></button>
+    </ion-fab>
 
-<!--foter-->
+  <!--foter-->
   <div class="bar bar-footer bar-balanced">
     <ion-toolbar color="purple" text-center>
       <!--logo-->

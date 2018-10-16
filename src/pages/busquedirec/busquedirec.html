@@ -1,0 +1,52 @@
+<ion-header>
+
+  <ion-navbar color="purple" class="title">
+    <p class="title">Búsqueda por dirección</p>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="close()">
+        <p class="cerrar">Cerrar </p>
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h5 class="text-drak">Ingresa una dirección</h5>
+
+  <ion-searchbar></ion-searchbar>
+  <ion-list>
+    <ion-item *ngFor="let item of items">
+      {{ item }}
+    </ion-item>
+  </ion-list>
+
+  <ion-card>
+
+    <ion-list>
+      <button ion-item class="text-drak">
+        Carulla Quinta Camacho
+        
+      </button>
+      <button ion-item class="text-drak">
+        Carulla Rosales
+      </button>
+      <button ion-item class="text-drak">
+        Carulla Country
+      </button>
+      <button ion-item class="text-drak">
+        Carulla Calle 63
+      </button>
+      <button ion-item class="text-drak">
+        Carulla Pepe Sierra
+      </button>
+      <button ion-item class="text-drak">
+        Carulla El Retiro
+      </button>
+    </ion-list>
+
+  </ion-card>
+
+</ion-content>
