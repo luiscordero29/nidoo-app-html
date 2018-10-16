@@ -7,12 +7,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { BusquedirecPage } from '../pages/busquedirec/busquedirec';
+import { FiltrosPage } from '../pages/filtros/filtros';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     BusquedirecPage,
+    FiltrosPage,
   ],
   imports: [
     BrowserModule,
@@ -22,7 +24,8 @@ import { BusquedirecPage } from '../pages/busquedirec/busquedirec';
   entryComponents: [
     MyApp,
     HomePage,
-    BusquedirecPage
+    BusquedirecPage,
+    FiltrosPage,
   ],
   providers: [
     StatusBar,

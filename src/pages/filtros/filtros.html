@@ -1,0 +1,132 @@
+<ion-header>
+
+  <ion-navbar color="purple" class="title">
+    <p class="title"> Filtros
+      <ion-icon name="options" class="title"></ion-icon>
+    </p>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="close()">
+        <p class="cerrar">Cerrar </p>
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <!--rango de pricio-->
+  <h5 class="text-drak">Rango de precio</h5>
+  <ion-card>
+    <ion-item>
+      <ion-input placeholder="Desde" clearInput class="text-drak"></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-input placeholder="Hasta" clearInput class="text-drak"></ion-input>
+    </ion-item>
+  </ion-card>
+  <hr>
+  <!--tipo de vihiculo-->
+  <h5 class="text-drak">Tipo de vehículo</h5>
+  <ion-row class="text-drak">
+    <ion-col col-3 text-center>
+      <button color="light" class="tipo">
+        <h6 padding-top> Carro</h6>
+        <ion-icon name="car" style="font-size: 40px" class="text-drak tipo"></ion-icon>
+      </button>
+    </ion-col>
+    <ion-col col-3 text-center>
+      <button color="light" class="tipo">
+        <h6 padding-top> Camioneta</h6>
+        <ion-icon name="car" style="font-size: 40px" class="text-drak tipo"></ion-icon>
+      </button>
+    </ion-col>
+    <ion-col col-3 text-center>
+      <button color="light" class="tipo">
+        <h6 padding-top> Moto</h6>
+        <ion-icon name="car" style="font-size: 40px" class="text-drak tipo"></ion-icon>
+      </button>
+    </ion-col>
+    <ion-col col-3 text-center>
+      <button color="light" class="tipo">
+        <h6 padding-top> Bicicleta</h6>
+        <ion-icon name="bicycle" style="font-size: 40px" class="text-drak tipo"></ion-icon>
+      </button>
+    </ion-col>
+  </ion-row>
+  <hr>
+  <!--Otras caracteristicas-->
+  <h5 class="text-drak">Otras características</h5>
+  <ion-item no-lines class="text-drak">
+    <ion-label style="font-size: 14px">
+      <ion-icon name="videocam" style="font-size: 20px; margin-right: 5px"></ion-icon>
+      Vigilancia 24 horas
+    </ion-label>
+    <ion-checkbox color="purple" checked="false"></ion-checkbox>
+  </ion-item>
+  <ion-item no-lines class="text-drak">
+    <ion-label style="font-size: 14px">
+      <ion-icon name="man" style="font-size: 20px; margin-left: 8px;margin-right: 8px"></ion-icon>
+      Servidumbre
+    </ion-label>
+    <ion-checkbox color="purple" checked="false"></ion-checkbox>
+  </ion-item>
+  <ion-item no-lines class="text-drak">
+    <ion-label style="font-size: 14px">
+      <ion-icon name="home" style="font-size: 20px; margin-right: 5px"></ion-icon>
+      Techado
+    </ion-label>
+    <ion-checkbox color="purple" checked="false"></ion-checkbox>
+  </ion-item>
+  <ion-item no-lines class="text-drak">
+    <ion-label style="font-size: 14px">
+      <ion-icon name="clock" style="font-size: 20px; margin-right: 5px"></ion-icon>
+      Disponible 24 horas
+    </ion-label>
+    <ion-checkbox color="purple" checked="false"></ion-checkbox>
+  </ion-item>
+  <hr>
+  <!--horarios-->
+  <h5 class="text-drak">Horario disponible</h5>
+  <ion-item no-lines class="text-drak">
+    <ion-label style="font-size: 14px">
+      24/7
+    </ion-label>
+    <ion-checkbox color="purple" checked="false"></ion-checkbox>
+  </ion-item>
+  <ion-item no-lines class="text-drak">
+    <ion-label style="font-size: 14px">
+      Lunes a viernes 24 horas
+    </ion-label>
+    <ion-checkbox color="purple" checked="false"></ion-checkbox>
+  </ion-item>
+  <ion-item no-lines class="text-drak">
+    <ion-label style="font-size: 14px">
+      Lunes a viernes 7 am a 9 pm
+    </ion-label>
+    <ion-checkbox color="purple" checked="false"></ion-checkbox>
+  </ion-item>
+  <ion-item no-lines class="text-drak">
+    <ion-label style="font-size: 14px">
+      Otro horario
+    </ion-label>
+    <ion-checkbox color="purple" checked="false"></ion-checkbox>
+  </ion-item>
+  <hr>
+  <!--calificacion-->
+  <h5 class="text-drak">Calificación</h5>
+  <ion-item no-lines class="text-drak">
+    <ion-icon name="star" style="font-size: 30px;"></ion-icon>
+    <ion-icon name="star" style="font-size: 30px;"></ion-icon>
+    <ion-icon name="star" style="font-size: 30px;"></ion-icon>
+    <ion-icon name="star-outline" style="font-size: 30px;"></ion-icon>
+    <ion-icon name="star-outline" style="font-size: 30px;"></ion-icon>
+  </ion-item>
+<!--botones-->
+<ion-segment>
+<button ion-button color="purple" style="font-size: 12px" outline >Limpiar filtros</button>
+<button ion-button color="purple" style="font-size: 12px">Mostrar parqueaderos</button>
+</ion-segment>
+</ion-content>
