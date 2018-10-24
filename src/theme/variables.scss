@@ -33,8 +33,16 @@ $app-direction: ltr;
 // colors so you can add, rename and remove colors as needed.
 // The "primary" color is the only required color in the map.
 
+$alert-md-button-padding-end:5px;
+$alert-md-title-font-size:50px;
+$alert-md-max-width: 290px;
+$alert-md-button-text-color:#733b89;
+$alert-md-head-text-align:center;
+$alert-md-message-text-color: #222;
+
 $colors: (
   purple:     #733b89,
+  blue:       #8dc3ca,
   primary:    #488aff,
   secondary:  #32db64,
   danger:     #f53d3d,

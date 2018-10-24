@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController,  ModalController } from 'ionic-angular';
+import { AlertController } from 'ionic-angular'
 
 import { BusquedirecPage } from '../busquedirec/busquedirec';
 import { FiltrosPage } from '../filtros/filtros';
@@ -15,6 +16,7 @@ export class HomePage {
   constructor(
     public navCtrl: NavController,
     public modalCtrl: ModalController,
+    public alerCtrl: AlertController,
   ) {
 
     for(let index = 0; index <10; index++){
@@ -34,4 +36,27 @@ export class HomePage {
     modal.present();
     modal.onDidDismiss(data=>console.log(data));
   }
+
+  doAlert() {
+    let alert = this.alerCtrl.create({
+      title: '<i class="fas fa-times-circle"></i>',
+      message: 'No hay parqueaderos disponibles bajo sus criterios de búsqueda en esta zona',
+      buttons: [
+        {
+          text: 'Editar filtros',
+          handler: data => {
+            console.log(this.filtros());
+          }
+        },
+        {
+          text: 'Mostrar todos',
+          handler: data => {
+            console.log('Cancel clicked');
+          }
+        },
+      ]
+    });
+    alert.present()
+  }
+  
 }
